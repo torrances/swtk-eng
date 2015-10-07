@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>swtk-eng</groupId>
+	<artifactId>swtk-eng</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>SWTK Eng Build</name>
+	<url>https://github.com/torrances/swtk-eng</url>
+	<description>an English Parsing Toolkit for the Semantic Web</description>
+	<inceptionYear>2014</inceptionYear>
+
+	<modules>
+		<module>../eng-core</module>
+		<module>../eng-grammar</module>
+		<module>../eng-roman-numerals</module>
+		<module>../eng-rollinghash</module>
+		<module>../eng-tokenizer</module>
+		<module>../eng-ner</module>
+		<module>../eng-stanford</module>
+		<module>../eng-wordnik</module>
+		<module>../eng-asm</module>
+		<module>../eng-preprocessor</module>
+		<module>../eng-triples</module>
+	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.swtk.eng.asm</groupId>
+			<artifactId>eng-asm</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.core</groupId>
+			<artifactId>eng-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.grammar</groupId>
+			<artifactId>eng-grammar</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.preprocessor</groupId>
+			<artifactId>eng-preprocessor</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.roman</groupId>
+			<artifactId>eng-roman-numerals</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--dependency>
+			<groupId>org.swtk.eng.snowball</groupId>
+			<artifactId>eng-snowball</artifactId>
+			<version>1.0.0</version>
+		</dependency-->
+		<dependency>
+			<groupId>org.swtk.eng.stanford</groupId>
+			<artifactId>eng-stanford</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.tokenizer</groupId>
+			<artifactId>eng-tokenizer</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.ner</groupId>
+			<artifactId>eng-ner</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--dependency>
+			<groupId>org.swtk.eng.verbnet</groupId>
+			<artifactId>eng-verbnet</artifactId>
+			<version>1.0.0</version>
+		</dependency-->
+		<!--dependency>
+			<groupId>org.swtk.eng.wordnet</groupId>
+			<artifactId>eng-wordnet</artifactId>
+			<version>1.0.0</version>
+		</dependency-->
+		<dependency>
+			<groupId>org.swtk.eng.wordnik</groupId>
+			<artifactId>eng-wordnik</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.triples</groupId>
+			<artifactId>eng-triples</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+
+</project>

@@ -1,0 +1,8 @@
+/target/
+/.settings/
+*.xml~
+/log/
+
+*.ser.gz
+*.prop
+models/
