@@ -29,10 +29,8 @@ public class CreateSentences {
 
 		for (String line : lines) {
 			line = line.trim();
-			if (!StringUtils.hasValue(StringUtils.trim(line)))
-				continue;
-			if (!TextUtils.isPunctuation(line.substring(line.length() - 1)))
-				line = line + ".";
+			if (!StringUtils.hasValue(StringUtils.trim(line))) continue;
+			if (!TextUtils.isPunctuation(line.substring(line.length() - 1))) line = line + ".";
 			list.add(line);
 		}
 
@@ -52,8 +50,7 @@ public class CreateSentences {
 		while (line.contains("  "))
 			line = line.replaceAll("  ", " ");
 
-		if (line.startsWith(")"))
-			line = StringUtils.substringAfter(line, ")").trim();
+		if (line.startsWith(")")) line = StringUtils.substringAfter(line, ")").trim();
 		line = RegexUtils.reverseDotNotation(line);
 
 		return line;
@@ -89,8 +86,8 @@ public class CreateSentences {
 			logger.debug("Processing Line (%s)", line);
 
 			for (String punctuation : PUNCTUATION) {
-				if (line.endsWith(punctuation))
-					continue;
+				if (line.endsWith(punctuation) && 1 == StringUtils.countMatches(line, punctuation)) continue;
+
 				while (StringUtils.contains(line, punctuation)) {
 
 					String temp = StringUtils.substringBefore(line, punctuation);

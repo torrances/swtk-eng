@@ -123,11 +123,22 @@ public class CreateSentencesTest {
 	public void run8() throws Throwable {
 
 		List<String> list = new ArrayList<String>();
-		list.add("Did you try and take us back to our own time? DOCTOR: Well, I got you away from that other time, didn't I? IAN: That isn't what I asked you.");
+		list.add(
+				"Did you try and take us back to our own time? DOCTOR: Well, I got you away from that other time, didn't I? IAN: That isn't what I asked you.");
 
 		Collection<String> lines = CreateSentences.process(list);
 		assertNotNull(lines);
-		for (String line : lines) System.err.println(line);
 		assertEquals(3, lines.size());
+	}
+
+	@Test
+	public void run9() throws Throwable {
+
+		List<String> list = new ArrayList<String>();
+		list.add("Well, I suggest before we go outside and explore, let us clean ourselvesup. SUSAN: Oh, yes.");
+
+		Collection<String> lines = CreateSentences.process(list);
+		assertNotNull(lines);
+		assertEquals(2, lines.size());
 	}
 }
