@@ -13,7 +13,9 @@ import com.trimc.blogger.commons.utils.TextUtils;
 
 public class CreateSentences {
 
-	public static LogManager	logger	= new LogManager(CreateSentences.class);
+	public static LogManager logger = new LogManager(CreateSentences.class);
+
+	public static final String[] PUNCTUATION = new String[] { ".", "?", "!" };
 
 	private static void add2List(StringBuilder sb, Collection<String> collection) {
 		String line = sb.toString().trim();
@@ -27,8 +29,10 @@ public class CreateSentences {
 
 		for (String line : lines) {
 			line = line.trim();
-			if (!StringUtils.hasValue(StringUtils.trim(line))) continue;
-			if (!TextUtils.isPunctuation(line.substring(line.length() - 1))) line = line + ".";
+			if (!StringUtils.hasValue(StringUtils.trim(line)))
+				continue;
+			if (!TextUtils.isPunctuation(line.substring(line.length() - 1)))
+				line = line + ".";
 			list.add(line);
 		}
 
@@ -48,27 +52,26 @@ public class CreateSentences {
 		while (line.contains("  "))
 			line = line.replaceAll("  ", " ");
 
-		if (line.startsWith(")")) line = StringUtils.substringAfter(line, ")").trim();
+		if (line.startsWith(")"))
+			line = StringUtils.substringAfter(line, ")").trim();
 		line = RegexUtils.reverseDotNotation(line);
 
 		return line;
 	}
 
-	/*private static String sentencify(StringBuilder sb, List<String> list, String line, String punctuation) {
-		while (line.contains(punctuation)) {
-
-			String temp = StringUtils.substringBefore(line, punctuation);
-
-			sb.append(" " + temp + " ");
-			add2List(sb, list);
-			sb = new StringBuilder();
-
-			line = StringUtils.substringAfter(line, punctuation).trim();
-		}
-
-		return line;
-	}
-	*/
+	/*
+	 * private static String sentencify(StringBuilder sb, List<String> list,
+	 * String line, String punctuation) { while (line.contains(punctuation)) {
+	 * 
+	 * String temp = StringUtils.substringBefore(line, punctuation);
+	 * 
+	 * sb.append(" " + temp + " "); add2List(sb, list); sb = new
+	 * StringBuilder();
+	 * 
+	 * line = StringUtils.substringAfter(line, punctuation).trim(); }
+	 * 
+	 * return line; }
+	 */
 	public static Collection<String> process(Collection<String> lines) throws BusinessException {
 		List<String> list = new ArrayList<String>();
 
@@ -78,10 +81,6 @@ public class CreateSentences {
 		while (iter.hasNext()) {
 			String line = iter.next();
 
-			//boolean hasEllipses = line.contains("...");
-			//String ellipsesId = String.valueOf(System.currentTimeMillis());
-			//if (hasEllipses) line = line.replaceAll("\\.\\.\\.", ellipsesId);
-
 			/* pattern for temporarily removing "." in numerical strings */
 			line = RegexUtils.useDotNotationForNumbers(line);
 
@@ -89,15 +88,15 @@ public class CreateSentences {
 			line = RegexUtils.useDotNotationForAbbreviations(line);
 			logger.debug("Processing Line (%s)", line);
 
-			for (String punctuation : new String[] { ".", "?", "!" }) {
-				while (line.contains(punctuation)) {
+			for (String punctuation : PUNCTUATION) {
+				if (line.endsWith(punctuation))
+					continue;
+				while (StringUtils.contains(line, punctuation)) {
 
 					String temp = StringUtils.substringBefore(line, punctuation);
-
 					sb.append(" " + temp + " ");
 					add2List(sb, list);
 					sb = new StringBuilder();
-
 					line = StringUtils.substringAfter(line, punctuation).trim();
 				}
 			}
