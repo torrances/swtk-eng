@@ -23,6 +23,7 @@
 		<module>../eng-asm</module>
 		<module>../eng-preprocessor</module>
 		<module>../eng-triples</module>
+		<module>../eng-tense</module>
 	</modules>
 
 	<dependencies>
@@ -89,6 +90,11 @@
 		<dependency>
 			<groupId>org.swtk.eng.triples</groupId>
 			<artifactId>eng-triples</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.eng.tense</groupId>
+			<artifactId>eng-tense</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
