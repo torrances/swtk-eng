@@ -1,10 +1,10 @@
-package org.swtk.eng.tense;
+package org.swtk.eng.tense.dmo;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.swtk.eng.tense.dmo.PluralityDictionary;
 
-public final class PluralityDictionaryTest {
+public final class TenseDictionaryTest {
 
 	@Test
 	public void test() throws Throwable {

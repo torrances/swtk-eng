@@ -16,6 +16,9 @@ public class PluralityDictionary {
 		/*	e.g. "carbonates" => "carbonate" 	*/
 		endsWith.put("ates", "ate");
 
+		/*	e.g. "faults" => "fault" 			*/
+		endsWith.put("ults", "ult");
+
 		/*	e.g. "cycles" => "cycle"			*/
 		endsWith.put("les", "le");
 

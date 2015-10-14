@@ -1,4 +1,4 @@
-package org.swtk.eng.tense;
+package org.swtk.eng.tense.dmo;
 
 import static org.junit.Assert.*;
 import org.junit.Test;

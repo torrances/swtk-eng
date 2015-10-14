@@ -13,6 +13,9 @@ public class AdjectiveDictionary {
 
 	static {
 
+		/*	e.g. "heavily" => "heavy"					*/
+		endsWith.put("avily", "avy");
+
 		/*	e.g. "stratigraphically" => "stratigraphic"	*/
 		endsWith.put("ically", "ic");
 	}

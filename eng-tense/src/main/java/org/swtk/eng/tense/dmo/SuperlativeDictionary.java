@@ -3,8 +3,6 @@ package org.swtk.eng.tense.dmo;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.swtk.eng.tense.SuperlativeDictionaryTest;
-
 import com.trimc.blogger.commons.LogManager;
 
 public class SuperlativeDictionary {

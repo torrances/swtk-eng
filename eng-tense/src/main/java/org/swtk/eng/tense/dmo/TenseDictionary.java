@@ -13,6 +13,9 @@ public class TenseDictionary {
 
 	static {
 
+		/*	e.g. "produced" => "produce"	*/
+		endsWith.put("duced", "duce");
+
 		/*	e.g. "fractured" => "fracture"	*/
 		endsWith.put("ured", "ure");
 	}
