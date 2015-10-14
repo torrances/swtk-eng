@@ -1,4 +1,4 @@
-package org.swtk.eng.tense;
+package org.swtk.eng.tense.dmo;
 
 import java.util.Map;
 import java.util.TreeMap;

@@ -1,7 +1,9 @@
-package org.swtk.eng.tense;
+package org.swtk.eng.tense.dmo;
 
 import java.util.Map;
 import java.util.TreeMap;
+
+import org.swtk.eng.tense.SuperlativeDictionaryTest;
 
 import com.trimc.blogger.commons.LogManager;
 
@@ -222,7 +224,7 @@ public class SuperlativeDictionary {
 		superlative2.put(t3, t1);
 	}
 	
-	public static String base(String term) {
+	public static String reduce(String term) {
 		String lower = term.toLowerCase();
 		
 		if (superlative1.containsKey(lower)) return superlative1.get(lower);
