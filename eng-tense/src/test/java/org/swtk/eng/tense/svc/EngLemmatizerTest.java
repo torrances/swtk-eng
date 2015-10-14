@@ -12,6 +12,9 @@ public final class EngLemmatizerTest {
 		
 		assertEquals("fault", EngLemmatizer.lemmatize("faults"));
 
+		assertEquals("deposit unconformable", EngLemmatizer.lemmatize("deposited unconformably"));
+		assertEquals("overthrust mesozoic strata", EngLemmatizer.lemmatize("overthrusted mesozoic strata"));
+		assertEquals("deep water facies", EngLemmatizer.lemmatize("deeper water facies"));
 		assertEquals("shallow horizon down", EngLemmatizer.lemmatize("shallower horizons down"));
 		assertEquals("fracture zone", EngLemmatizer.lemmatize("fracture zone"));
 		assertEquals("heavy fault", EngLemmatizer.lemmatize("heavily faulted"));

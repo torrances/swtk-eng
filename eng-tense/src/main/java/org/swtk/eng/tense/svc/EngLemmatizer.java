@@ -1,6 +1,7 @@
 package org.swtk.eng.tense.svc;
 
 import org.swtk.eng.tense.dmo.AdjectiveDictionary;
+import org.swtk.eng.tense.dmo.GerundsDictionary;
 import org.swtk.eng.tense.dmo.PluralityDictionary;
 import org.swtk.eng.tense.dmo.SuperlativeDictionary;
 import org.swtk.eng.tense.dmo.TenseDictionary;
@@ -39,6 +40,9 @@ public class EngLemmatizer {
 		if (!modified.equals(term)) return modified;
 
 		modified = TenseDictionary.reduce(term);
+		if (!modified.equals(term)) return modified;
+
+		modified = GerundsDictionary.reduce(term);
 		if (!modified.equals(term)) return modified;
 
 		return term;

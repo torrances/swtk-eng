@@ -13,17 +13,29 @@ public class TenseDictionary {
 
 	static {
 
-		/*	e.g. "arranged" => "arrange"	*/
+		/*	e.g. "arranged" => "arrange"			*/
 		endsWith.put("ged", "ge");
 
 		/*	e.g. "faulted" => "fault"	
 		 * 	interestingly enough, this is not past-tense; but adj. */
 		endsWith.put("aulted", "ault");
 
-		/*	e.g. "produced" => "produce"	*/
+		/*	e.g. "produced" => "produce"			*/
 		endsWith.put("duced", "duce");
+		
+		/*	e.g. "overthrusted" => "overthrust" 	*/
+		endsWith.put("sted", "st");
+		
+		/*	e.g. "waves" => "wave"					*/
+		endsWith.put("ves", "ve");
+		
+		/*	e.g. "mountains" => "mountain"			*/
+		endsWith.put("tains", "tain");
 
-		/*	e.g. "fractured" => "fracture"	*/
+		/*	e.g. "overthrusted" => "overthrust" 	*/
+		endsWith.put("sited", "sted");
+
+		/*	e.g. "fractured" => "fracture"			*/
 		endsWith.put("ured", "ure");
 	}
 
