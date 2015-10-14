@@ -7,7 +7,7 @@ import com.trimc.blogger.commons.LogManager;
 
 public class SuperlativeDictionary {
 
-	public static LogManager logger = new LogManager(SuperlativeDictionaryTest.class);
+	public static LogManager logger = new LogManager(SuperlativeDictionary.class);
 
 	private static Map<String, String> superlative1 = new TreeMap<String, String>();
 
@@ -221,14 +221,14 @@ public class SuperlativeDictionary {
 		superlative1.put(t2, t1);
 		superlative2.put(t3, t1);
 	}
-	
+
 	public static String reduce(String term) {
 		String lower = term.toLowerCase();
-		
+
 		if (superlative1.containsKey(lower)) return superlative1.get(lower);
 		if (superlative2.containsKey(lower)) return superlative2.get(lower);
-		
+
 		return term;
 	}
-	
+
 }

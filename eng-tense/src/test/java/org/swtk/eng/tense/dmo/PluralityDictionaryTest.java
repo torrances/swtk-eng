@@ -1,8 +1,8 @@
 package org.swtk.eng.tense.dmo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import org.swtk.eng.tense.dmo.PluralityDictionary;
 
 public final class PluralityDictionaryTest {
 

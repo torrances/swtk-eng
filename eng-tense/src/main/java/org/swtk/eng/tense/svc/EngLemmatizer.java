@@ -4,6 +4,10 @@ import org.swtk.eng.tense.dmo.AdjectiveDictionary;
 import org.swtk.eng.tense.dmo.PluralityDictionary;
 import org.swtk.eng.tense.dmo.SuperlativeDictionary;
 import org.swtk.eng.tense.dmo.TenseDictionary;
+//import org.swtk.eng.tense.dmo.AdjectiveDictionary;
+//import org.swtk.eng.tense.dmo.PluralityDictionary;
+//import org.swtk.eng.tense.dmo.SuperlativeDictionary;
+//import org.swtk.eng.tense.dmo.TenseDictionary;
 import org.swtk.eng.tokenizer.text.TextTokenizer;
 
 import com.trimc.blogger.commons.exception.BusinessException;
