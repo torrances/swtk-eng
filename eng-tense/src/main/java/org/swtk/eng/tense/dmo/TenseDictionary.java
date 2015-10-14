@@ -32,8 +32,8 @@ public class TenseDictionary {
 		/*	e.g. "mountains" => "mountain"			*/
 		endsWith.put("tains", "tain");
 
-		/*	e.g. "overthrusted" => "overthrust" 	*/
-		endsWith.put("sited", "sted");
+		/*	e.g. "deposited" => "deposit" 			*/
+		endsWith.put("sited", "sit");
 
 		/*	e.g. "fractured" => "fracture"			*/
 		endsWith.put("ured", "ure");

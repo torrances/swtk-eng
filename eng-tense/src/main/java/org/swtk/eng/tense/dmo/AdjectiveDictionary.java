@@ -16,6 +16,9 @@ public class AdjectiveDictionary {
 		/*	e.g. "heavily" => "heavy"					*/
 		endsWith.put("avily", "avy");
 
+		/*	e.g. "uncomforably" => "uncomforable"		*/
+		endsWith.put("ably", "able");
+
 		/*	e.g. "radilly" => "radial"					*/
 		endsWith.put("ially", "ial");
 

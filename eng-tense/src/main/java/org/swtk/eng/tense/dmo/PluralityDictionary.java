@@ -25,6 +25,24 @@ public class PluralityDictionary {
 		/*	e.g. "reservoirs" => "reservoir"	*/
 		endsWith.put("oirs", "oir");
 
+		/*	e.g. "beds" => "bed"				*/
+		endsWith.put("eds", "ed");
+
+		/*	e.g. "forces" => "force"			*/
+		endsWith.put("ces", "ce");
+
+		/*	e.g. "clastics" => "clastic"		*/
+		endsWith.put("ics", "ic");
+
+		/*	e.g. "sequences" => "sequence"		*/
+		endsWith.put("ences", "ence");
+
+		/*	e.g. "systems" => "system"			*/
+		endsWith.put("ems", "em");
+
+		/*	e.g. "fields" => "field"			*/
+		endsWith.put("lds", "ld");
+
 		/*	e.g. "horizons" => "horizon"		*/
 		endsWith.put("ons", "on");
 
@@ -32,6 +50,9 @@ public class PluralityDictionary {
 
 		/*	e.g. "dolomites" => "dolomite"		*/
 		endsWith.put("ites", "ite");
+
+		/*	e.g. "platforms" => "platform"		*/
+		endsWith.put("orms", "orm");
 
 		endsWith.put("ones", "one");
 	}
