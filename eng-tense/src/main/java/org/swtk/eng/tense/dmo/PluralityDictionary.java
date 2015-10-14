@@ -25,17 +25,21 @@ public class PluralityDictionary {
 		/*	e.g. "reservoirs" => "reservoir"	*/
 		endsWith.put("oirs", "oir");
 
+		/*	e.g. "horizons" => "horizon"		*/
+		endsWith.put("ons", "on");
+
 		endsWith.put("facies", "facies");
 
 		/*	e.g. "dolomites" => "dolomite"		*/
 		endsWith.put("ites", "ite");
 
-		endsWith.put("stones", "stone");
+		endsWith.put("ones", "one");
 	}
 
 	public static String reduce(String term) {
 		String lower = term.toLowerCase();
 		for (String key : endsWith.keySet()) {
+			if (lower.equals(key)) continue;
 			if (!lower.endsWith(key)) continue;
 			return term.substring(0, term.length() - key.length()) + endsWith.get(key);
 		}

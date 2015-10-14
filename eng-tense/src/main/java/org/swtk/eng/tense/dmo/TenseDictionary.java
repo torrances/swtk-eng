@@ -13,6 +13,13 @@ public class TenseDictionary {
 
 	static {
 
+		/*	e.g. "arranged" => "arrange"	*/
+		endsWith.put("ged", "ge");
+
+		/*	e.g. "faulted" => "fault"	
+		 * 	interestingly enough, this is not past-tense; but adj. */
+		endsWith.put("aulted", "ault");
+
 		/*	e.g. "produced" => "produce"	*/
 		endsWith.put("duced", "duce");
 

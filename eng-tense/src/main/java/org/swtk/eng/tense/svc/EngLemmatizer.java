@@ -7,6 +7,7 @@ import org.swtk.eng.tense.dmo.TenseDictionary;
 import org.swtk.eng.tokenizer.text.TextTokenizer;
 
 import com.trimc.blogger.commons.exception.BusinessException;
+import com.trimc.blogger.commons.utils.StringUtils;
 
 public class EngLemmatizer {
 
@@ -15,7 +16,11 @@ public class EngLemmatizer {
 		for (String token : new TextTokenizer(term).tokenize().array())
 			sb.append(lemmatize2(token) + " ");
 
-		return sb.toString().trim();
+		String modified = StringUtils.trim(sb.toString());
+		while (modified.contains("  "))
+			modified = modified.replaceAll("  ", " ");
+
+		return modified;
 	}
 
 	private static String lemmatize2(String term) {

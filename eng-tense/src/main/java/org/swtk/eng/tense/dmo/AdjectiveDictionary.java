@@ -16,6 +16,12 @@ public class AdjectiveDictionary {
 		/*	e.g. "heavily" => "heavy"					*/
 		endsWith.put("avily", "avy");
 
+		/*	e.g. "radilly" => "radial"					*/
+		endsWith.put("ially", "ial");
+
+		/*	e.g. "relatively" => "relative"				*/
+		endsWith.put("ively", "ive	");
+
 		/*	e.g. "stratigraphically" => "stratigraphic"	*/
 		endsWith.put("ically", "ic");
 	}
