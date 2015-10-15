@@ -7,9 +7,12 @@
 	<packaging>jar</packaging>
 
 	<url />
-	<name>Approximate String Matching (ASM) Project</name>
+	<name>ENG ASM</name>
 	<inceptionYear>20115</inceptionYear>
-	<description>Various ASM algorithms (Levenstein, Jaco, Soundex, etc)</description>
+	<description>
+		Approximate String Matching (ASM) Project
+		Various ASM algorithms (Levenstein, Jaco, Soundex, etc)
+	</description>
 
 	<build>
 		<plugins>

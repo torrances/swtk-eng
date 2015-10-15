@@ -6,7 +6,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>Triple Extractor</name>
+	<name>Eng Triple Extractor</name>
 	<url>https://github.com/torrances/swtk-eng</url>
 	<inceptionYear>2015</inceptionYear>
 	<description>Semantic Triple Extraction</description>
