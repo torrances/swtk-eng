@@ -7,9 +7,12 @@
 	<packaging>jar</packaging>
 
 	<url />
+	<name>Eng Rollinghash</name>
 	<inceptionYear>2015</inceptionYear>
-	<description>3rd party plugin</description>
-	<name>rollinghash (RobinKarp, Cyclic, Character)</name>
+	<description>
+		rollinghash (RobinKarp, Cyclic, Character)
+		3rd party plugin
+	</description>
 
 	<build>
 		<plugins>
