@@ -8,7 +8,7 @@ import org.swtk.eng.stanford.dmo.base.FindNounPhrasesBase;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public class FindNounPhrases extends FindNounPhrasesBase {
 

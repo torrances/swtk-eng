@@ -8,8 +8,8 @@ import org.swtk.eng.asm.dto.adapter.CosineDocumentSimilarityResultAdapter;
 import org.swtk.eng.asm.svc.impl.CosineDocumentSimilarityServiceImpl;
 
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
 import com.trimc.blogger.commons.utils.GsonUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public final class CosineDocumentSimilarityService4FileDir {
 

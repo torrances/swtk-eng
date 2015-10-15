@@ -8,7 +8,7 @@ import org.swtk.eng.triples.svc.TripleExtractor;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public final class TripleExtractor4TED {
 

@@ -31,8 +31,14 @@ public class PluralityDictionary {
 		/*	e.g. "forces" => "force"			*/
 		endsWith.put("ces", "ce");
 
+		/*	e.g. "intervals" => "interval"		*/
+		endsWith.put("als", "al");
+
 		/*	e.g. "clastics" => "clastic"		*/
 		endsWith.put("ics", "ic");
+
+		/*	e.g. "deposits" => "deposit"		*/
+		endsWith.put("its", "it");
 
 		/*	e.g. "sequences" => "sequence"		*/
 		endsWith.put("ences", "ence");

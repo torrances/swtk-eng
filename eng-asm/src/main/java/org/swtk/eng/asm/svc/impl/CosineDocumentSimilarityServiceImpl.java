@@ -14,9 +14,9 @@ import org.swtk.eng.asm.svc.CosineDocumentSimilarityService;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
 import com.trimc.blogger.commons.utils.Stopwatch;
 import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public class CosineDocumentSimilarityServiceImpl implements CosineDocumentSimilarityService {
 

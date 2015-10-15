@@ -13,21 +13,21 @@ import java.util.TreeSet;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
 import com.trimc.blogger.commons.utils.MapUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public final class FindRepeatingLines {
 
 	/* minimum length of a repeating line
 	 * for example, "a" or "e" can repeat frequently but these should not be considered 
 	 * default is 2 */
-	public static int			LENGTH		= 2;
+	public static int LENGTH = 2;
 
-	public static LogManager	logger		= new LogManager(FindRepeatingLines.class);
+	public static LogManager logger = new LogManager(FindRepeatingLines.class);
 
 	/* minimum number of times a line can repeat to be considered repeating 
 	 * default is 2 */
-	public static int			THRESHOLD	= 10;
+	public static int THRESHOLD = 10;
 
 	private static Collection<String> filter(Collection<String> lines) throws BusinessException {
 		List<String> list = new ArrayList<String>();

@@ -11,8 +11,8 @@ import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.FileUtils;
 import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.file.FileUtils;
 
 public final class JaccardSimilarityContractAdapter {
 
