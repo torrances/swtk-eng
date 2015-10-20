@@ -27,7 +27,7 @@ public class FindNounPhrases extends FindNounPhrasesBase {
 			Collection<String> lines = FileUtils.toList(file, getCodepage());
 			for (String line : lines) {
 
-				Collection<String> nouns = new CombineNounPhrases(line, getCodepage()).infer().combine().nouns();
+				Collection<String> nouns = new CombineNounPhrases(line, getCodepage()).infer().combine(true, true).nouns();
 				int current = getNouns().size();
 
 				getNouns().addAll(nouns);

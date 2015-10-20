@@ -32,7 +32,7 @@ public abstract class CombineNounPhrasesTestBase {
 		try {
 
 			/* the code being tested must handle potential NPEs */
-			new CombineNounPhrases(input, codepage).combine();
+			new CombineNounPhrases(input, codepage).combine(true, true);
 
 		} catch (NullPointerException e) {
 			/* if this assertion fails it means a null-pointer-exception was thrown
@@ -47,7 +47,7 @@ public abstract class CombineNounPhrasesTestBase {
 	}
 
 	protected String infer(String input) throws Throwable {
-		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).infer().greedy().combine().text();
+		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).infer().greedy().combine(true, true).text();
 		assertNotNull(result);
 		assertNotEquals(result, input);
 		logger.debug("Inferred Results:\n\t%s\n\t%s)", input, result);
@@ -56,7 +56,7 @@ public abstract class CombineNounPhrasesTestBase {
 	}
 
 	protected String inferThenInject(Collection<String> injected, String input) throws Throwable {
-		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).infer().inject(injected).combine().text();
+		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).infer().inject(injected).combine(true, true).text();
 		assertNotNull(result);
 		assertNotEquals(result, input);
 		logger.debug("Inferred then Injected Results:\n\t%s\n\t%s)", input, result);
@@ -65,7 +65,7 @@ public abstract class CombineNounPhrasesTestBase {
 	}
 
 	protected String inject(Collection<String> injected, String input) throws Throwable {
-		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(injected).combine().text();
+		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(injected).combine(true, true).text();
 		assertNotNull(result);
 		assertNotEquals(result, input);
 		logger.debug("Injected Results:\n\t%s\n\t%s)", input, result);
@@ -74,7 +74,7 @@ public abstract class CombineNounPhrasesTestBase {
 	}
 
 	protected String injectThenInfer(Collection<String> injected, String input) throws Throwable {
-		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(injected).infer().combine().text();
+		String result = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(injected).infer().combine(true, true).text();
 		assertNotNull(result);
 		assertNotEquals(result, input);
 		logger.debug("Injected then Inferred Results:\n\t%s\n\t%s)", input, result);

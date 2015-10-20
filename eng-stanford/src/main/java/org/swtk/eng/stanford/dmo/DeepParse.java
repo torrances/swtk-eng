@@ -28,12 +28,12 @@ public class DeepParse extends DeepParseBase {
 	}
 
 	public DeepParse combine() throws BusinessException {
-		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().combine().text());
+		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().combine(true, true).text());
 		return this;
 	}
 
 	public DeepParse combine(Collection<String> injected) throws BusinessException {
-		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().inject(injected).combine().text());
+		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().inject(injected).combine(true, true).text());
 		return this;
 	}
 

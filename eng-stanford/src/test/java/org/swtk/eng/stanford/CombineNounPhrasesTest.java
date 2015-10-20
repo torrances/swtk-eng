@@ -36,7 +36,7 @@ public final class CombineNounPhrasesTest extends CombineNounPhrasesTestBase {
 	public void combined1() throws Throwable {
 
 		Collection<String> collection = SetUtils.toList("flange faces", "capillary attraction", "crevice breakers");
-		Collection<String> combined = new CombineNounPhrases(INPUT_01, Codepage.WINDOWS_1252).infer().greedy().inject(collection).combine().combined();
+		Collection<String> combined = new CombineNounPhrases(INPUT_01, Codepage.WINDOWS_1252).infer().greedy().inject(collection).combine(true, true).combined();
 
 		assertNotNull(combined);
 		assertFalse(combined.isEmpty());
@@ -50,7 +50,7 @@ public final class CombineNounPhrasesTest extends CombineNounPhrasesTestBase {
 		Collection<String> collection = SetUtils.toList("general corrosion");
 
 		String input = "Oxidation in elevated temperature gaseous and hydrocarbon liquid environments and general corrosion in aqueous environments are the two corrosion processes most commonly encountered in refining and chemical processing operations.";
-		Collection<String> combined = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(collection).greedy().inject(collection).combine().combined();
+		Collection<String> combined = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(collection).greedy().inject(collection).combine(true, true).combined();
 
 		assertNotNull(combined);
 		assertFalse(combined.isEmpty());
@@ -63,7 +63,7 @@ public final class CombineNounPhrasesTest extends CombineNounPhrasesTestBase {
 		Collection<String> list = SetUtils.toList("hydrogen reference", "electrode reaction", "reference electrode reaction", "standard reference electrode");
 
 		String input = "The half cell potentials given in the table are measured with respect to the hydrogen reference electrode reaction.";
-		Collection<String> entities = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).combine().combined();
+		Collection<String> entities = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).combine(true, true).combined();
 		assertFalse(SetUtils.memberOf("hydrogen reference electrode reaction", entities));
 	}
 
@@ -73,10 +73,10 @@ public final class CombineNounPhrasesTest extends CombineNounPhrasesTestBase {
 		Collection<String> list = SetUtils.toList("hydrogen reference", "electrode reaction", "reference electrode", "reference electrode reaction", "hydrogen reference electrode");
 
 		String input = "The half cell potentials given in the table are measured with respect to the hydrogen reference electrode reaction.";
-		Collection<String> e1 = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).combine().combined();
+		Collection<String> e1 = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).combine(true, true).combined();
 		assertFalse(SetUtils.memberOf("hydrogen reference electrode reaction", e1));
 
-		Collection<String> e2 = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).greedy().combine().combined();
+		Collection<String> e2 = new CombineNounPhrases(input, Codepage.WINDOWS_1252).inject(list).greedy().combine(true, true).combined();
 		assertTrue(SetUtils.memberOf("hydrogen reference electrode reaction", e2));
 	}
 

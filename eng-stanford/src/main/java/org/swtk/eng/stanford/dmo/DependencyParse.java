@@ -29,13 +29,13 @@ public class DependencyParse extends DependencyParseFrame {
 	}
 
 	public DependencyParse combine() throws BusinessException {
-		setCombineNounPhrases(new CombineNounPhrases(text(), getCodepage()).infer().combine());
+		setCombineNounPhrases(new CombineNounPhrases(text(), getCodepage()).infer().combine(true, true));
 		getInternals().setInput(getCombineNounPhrases().text());
 		return this;
 	}
 
 	public DependencyParse combine(Collection<String> injected) throws BusinessException {
-		setCombineNounPhrases(new CombineNounPhrases(text(), getCodepage()).infer().inject(injected).combine());
+		setCombineNounPhrases(new CombineNounPhrases(text(), getCodepage()).infer().inject(injected).combine(true, true));
 		getInternals().setInput(getCombineNounPhrases().text());
 		return this;
 	}

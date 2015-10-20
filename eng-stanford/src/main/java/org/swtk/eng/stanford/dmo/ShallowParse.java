@@ -27,7 +27,7 @@ public class ShallowParse extends ShallowParseBase {
 	}
 
 	public ShallowParse combine() throws BusinessException {
-		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().combine().text());
+		setInput(new CombineNounPhrases(getInput(), getCodepage()).infer().combine(true, true).text());
 		return this;
 	}
 

@@ -15,13 +15,13 @@ import com.trimc.blogger.commons.type.Codepage;
 
 public class CombineNounPhrases extends CombineNounPhrasesFrame {
 
-	public static LogManager	logger	= new LogManager(CombineNounPhrases.class);
+	public static LogManager logger = new LogManager(CombineNounPhrases.class);
 
 	public CombineNounPhrases(String input, Codepage codepage) throws AdapterValidationException {
 		transform(input, codepage);
 	}
 
-	public CombineNounPhrases combine() {
+	public CombineNounPhrases combine(boolean includeConjunctions, boolean includeDisjunctions) {
 		String input = getInput();
 
 		for (String nounPhrase : getInjectedNounPhrases()) {
@@ -34,7 +34,8 @@ public class CombineNounPhrases extends CombineNounPhrasesFrame {
 			input = replaceAll(input, nounPhrase);
 		}
 
-		input = input.replaceAll("_and_", " and ");
+		if (includeConjunctions) input = input.replaceAll("_and_", " and ");
+		if (includeDisjunctions) input = input.replaceAll("_or_", " or ");
 
 		setInput(input);
 		return this;

@@ -33,7 +33,7 @@ public class TripleExtractor {
 	private String preprocess(String input, Codepage codepage) throws BusinessException {
 		String original = input;
 
-		input = new CombineNounPhrases(input, codepage).infer().greedy().combine().text();
+		input = new CombineNounPhrases(input, codepage).infer().greedy().combine(true, true).text();
 
 		if (!original.equals(input)) logger.debug("Preprocessed Input (original = %s, modified = %s)", original, input);
 		return input;

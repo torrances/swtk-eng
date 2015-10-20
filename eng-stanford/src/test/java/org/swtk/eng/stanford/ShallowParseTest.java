@@ -81,7 +81,7 @@ public final class ShallowParseTest {
 		 * 	text = the_lazy_dog, pos = VBG				<== this is a problem in the CombineNounPhrases class
 		 * 	text = ., pos = #
 		 */
-		String text = new CombineNounPhrases(INPUT, CODEPAGE).infer().combine().text();
+		String text = new CombineNounPhrases(INPUT, CODEPAGE).infer().combine(true, true).text();
 		assertEquals("The_quick_brown_fox jumped over the_lazy_dog.", text);
 
 		ShallowParse shallowParse = new ShallowParse(text, CODEPAGE).parse();
