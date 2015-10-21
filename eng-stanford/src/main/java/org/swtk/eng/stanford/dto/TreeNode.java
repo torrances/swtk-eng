@@ -3,9 +3,8 @@ package org.swtk.eng.stanford.dto;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.swtk.eng.grammar.types.EngGrammar;
-
 import com.google.gson.annotations.Expose;
+import com.trimc.blogger.commons.type.EngGrammar;
 import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class TreeNode {

@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.swtk.common.dict.beans.StopWordsDictionary;
-import org.swtk.eng.grammar.types.EngGrammarMetaType;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
+import com.trimc.blogger.commons.type.EngGrammarMetaType;
 import com.trimc.blogger.commons.utils.TextUtils;
 
 @Lazy

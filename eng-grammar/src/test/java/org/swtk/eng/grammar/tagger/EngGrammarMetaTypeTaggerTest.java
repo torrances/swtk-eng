@@ -6,7 +6,8 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 import org.swtk.eng.core.EngIocContainer;
-import org.swtk.eng.grammar.types.EngGrammarMetaType;
+
+import com.trimc.blogger.commons.type.EngGrammarMetaType;
 
 public class EngGrammarMetaTypeTaggerTest {
 

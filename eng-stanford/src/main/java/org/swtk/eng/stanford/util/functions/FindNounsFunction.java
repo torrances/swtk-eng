@@ -4,11 +4,11 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.swtk.eng.grammar.types.EngGrammarUpperType;
 import org.swtk.eng.stanford.dto.TreeNode;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
+import com.trimc.blogger.commons.type.EngGrammarUpperType;
 
 public class FindNounsFunction {
 

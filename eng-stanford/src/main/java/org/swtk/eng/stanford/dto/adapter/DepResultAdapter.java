@@ -1,10 +1,10 @@
 package org.swtk.eng.stanford.dto.adapter;
 
-import org.swtk.eng.grammar.types.StanfordDependencyType;
 import org.swtk.eng.stanford.dto.DepResult;
 import org.w3c.dom.Element;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
+import com.trimc.blogger.commons.type.StanfordDependencyType;
 
 public final class DepResultAdapter {
 

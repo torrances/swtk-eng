@@ -1,9 +1,9 @@
 package org.swtk.eng.stanford.dto.adapter;
 
-import org.swtk.eng.grammar.types.EngGrammar;
 import org.swtk.eng.stanford.dto.EngGrammarSer;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
+import com.trimc.blogger.commons.type.EngGrammar;
 
 public final class EngGrammarSerAdapter {
 

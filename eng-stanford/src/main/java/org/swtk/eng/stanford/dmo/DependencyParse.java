@@ -2,7 +2,6 @@ package org.swtk.eng.stanford.dmo;
 
 import java.util.Collection;
 
-import org.swtk.eng.grammar.types.StanfordDependencyType;
 import org.swtk.eng.stanford.dmo.base.frame.DependencyParseFrame;
 import org.swtk.eng.stanford.dto.DepResult;
 import org.swtk.eng.stanford.dto.DepResults;
@@ -16,6 +15,7 @@ import org.w3c.dom.Element;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
+import com.trimc.blogger.commons.type.StanfordDependencyType;
 import com.trimc.blogger.commons.utils.GsonUtils;
 import com.trimc.blogger.commons.xml.DomUtils;
 

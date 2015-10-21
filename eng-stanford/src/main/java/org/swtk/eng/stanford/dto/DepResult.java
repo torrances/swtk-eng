@@ -1,8 +1,7 @@
 package org.swtk.eng.stanford.dto;
 
-import org.swtk.eng.grammar.types.StanfordDependencyType;
-
 import com.google.gson.annotations.Expose;
+import com.trimc.blogger.commons.type.StanfordDependencyType;
 
 /**
  * 	Java Object for Stanford Dependency Parse

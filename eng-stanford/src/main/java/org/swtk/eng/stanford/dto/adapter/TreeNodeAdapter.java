@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.swtk.eng.grammar.types.EngGrammar;
 import org.swtk.eng.stanford.dto.TreeNode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
+import com.trimc.blogger.commons.type.EngGrammar;
 import com.trimc.blogger.commons.utils.string.StringUtils;
 import com.trimc.blogger.commons.xml.DomUtils;
 
