@@ -10,11 +10,11 @@ import java.util.Map;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.exception.BusinessException;
-import com.trimc.blogger.commons.utils.MapUtils;
+import com.trimc.blogger.commons.utils.map.MapUtils;
 
 public final class CharTokenizerResultAdapter {
 
-	public static LogManager	logger	= new LogManager(CharTokenizerResultAdapter.class);
+	public static LogManager logger = new LogManager(CharTokenizerResultAdapter.class);
 
 	public static void toFile(File outFile, CharTokenizerResult result) throws BusinessException {
 		try {
