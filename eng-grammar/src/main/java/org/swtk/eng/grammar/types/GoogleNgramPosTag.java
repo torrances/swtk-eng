@@ -1,7 +1,7 @@
 package org.swtk.eng.grammar.types;
 
 import com.trimc.blogger.commons.LogManager;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 /**
  * Purpose:

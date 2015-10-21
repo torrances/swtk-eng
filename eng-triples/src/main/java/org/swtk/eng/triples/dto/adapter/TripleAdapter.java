@@ -5,7 +5,7 @@ import org.swtk.eng.triples.dto.Triple;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.AdapterValidationException;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public final class TripleAdapter {
 

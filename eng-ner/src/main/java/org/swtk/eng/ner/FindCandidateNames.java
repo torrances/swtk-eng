@@ -14,7 +14,7 @@ import org.swtk.eng.tokenizer.text.TextTokenizer;
 
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.utils.SetUtils;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class FindCandidateNames {
 

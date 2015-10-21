@@ -13,7 +13,7 @@ import org.swtk.common.ds.d3js.dto.adapter.NodeStructureAdapter;
 import org.swtk.eng.asm.dto.CosineDocumentSimilarityResult;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public final class CosineDocumentSimilarityResultAdapter {
 

@@ -10,7 +10,7 @@ import org.swtk.eng.preprocess.patterns.FigureAttributionsPatterns;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class RemoveFigureAttribution {
 

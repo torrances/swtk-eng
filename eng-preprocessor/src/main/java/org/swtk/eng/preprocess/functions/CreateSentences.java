@@ -8,8 +8,8 @@ import java.util.List;
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.utils.RegexUtils;
-import com.trimc.blogger.commons.utils.StringUtils;
 import com.trimc.blogger.commons.utils.TextUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class CreateSentences {
 

@@ -11,7 +11,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 import com.trimc.blogger.commons.xml.DomUtils;
 
 public final class TreeNodeAdapter {

@@ -7,7 +7,7 @@ import java.util.TreeSet;
 import org.swtk.eng.triples.PredicateType;
 
 import com.trimc.blogger.commons.utils.SetUtils;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class Triple {
 

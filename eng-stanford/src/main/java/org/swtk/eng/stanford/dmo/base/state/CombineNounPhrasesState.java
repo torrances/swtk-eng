@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public abstract class CombineNounPhrasesState {
 

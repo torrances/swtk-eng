@@ -10,7 +10,7 @@ import org.swtk.eng.tokenizer.text.TextTokenizer;
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public abstract class CombineNounPhrasesFrame extends CombineNounPhrasesState {
 

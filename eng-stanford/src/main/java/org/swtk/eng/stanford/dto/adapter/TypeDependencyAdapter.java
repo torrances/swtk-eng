@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 import com.trimc.blogger.commons.xml.DomUtils;
 import com.trimc.blogger.commons.xml.XmlFormatter;
 
