@@ -8,6 +8,7 @@ import java.io.File;
 
 import org.junit.Test;
 import org.swtk.common.framework.type.LanguageTag;
+import org.swtk.eng.tokenizer.chars.adapter.CharTokenizerResultAdapter;
 
 import com.trimc.blogger.commons.type.Codepage;
 

@@ -1,4 +1,4 @@
-package org.swtk.eng.tokenizer.chars;
+package org.swtk.eng.tokenizer.chars.adapter;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -7,10 +7,13 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.Map;
 
+import org.swtk.eng.tokenizer.chars.CharTokenizerContract;
+import org.swtk.eng.tokenizer.chars.CharTokenizerResult;
+
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.exception.BusinessException;
-import com.trimc.blogger.commons.utils.map.MapUtils;
+import com.trimc.blogger.commons.utils.file.MapUtils;
 
 public final class CharTokenizerResultAdapter {
 

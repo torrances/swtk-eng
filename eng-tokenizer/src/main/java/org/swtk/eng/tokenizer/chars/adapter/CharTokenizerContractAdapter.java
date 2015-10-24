@@ -1,8 +1,9 @@
-package org.swtk.eng.tokenizer.chars;
+package org.swtk.eng.tokenizer.chars.adapter;
 
 import java.io.File;
 
 import org.swtk.common.framework.type.LanguageTag;
+import org.swtk.eng.tokenizer.chars.CharTokenizerContract;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.type.Codepage;
