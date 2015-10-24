@@ -14,7 +14,7 @@ import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
 import com.trimc.blogger.commons.utils.file.FileUtils;
-import com.trimc.blogger.commons.utils.file.MapUtils;
+import com.trimc.blogger.commons.utils.map.MapUtils;
 
 public final class FindRepeatingLines {
 
