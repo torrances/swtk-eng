@@ -20,8 +20,6 @@ public class CreateSentences012Test {
 
 		Collection<String> lines = CreateSentences.process(list);
 		assertNotNull(lines);
-		for (String line : lines)
-			System.err.println(line);
 		assertEquals(3, lines.size());
 	}
 }
