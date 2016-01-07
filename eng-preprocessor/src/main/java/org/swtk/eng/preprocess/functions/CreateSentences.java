@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.trimc.blogger.commons.LogManager;
 import com.trimc.blogger.commons.exception.BusinessException;
+import com.trimc.blogger.commons.utils.CollectionUtils;
 import com.trimc.blogger.commons.utils.RegexUtils;
 import com.trimc.blogger.commons.utils.TextUtils;
 import com.trimc.blogger.commons.utils.string.StringUtils;
@@ -56,19 +57,6 @@ public class CreateSentences {
 		return line;
 	}
 
-	/*
-	 * private static String sentencify(StringBuilder sb, List<String> list,
-	 * String line, String punctuation) { while (line.contains(punctuation)) {
-	 * 
-	 * String temp = StringUtils.substringBefore(line, punctuation);
-	 * 
-	 * sb.append(" " + temp + " "); add2List(sb, list); sb = new
-	 * StringBuilder();
-	 * 
-	 * line = StringUtils.substringAfter(line, punctuation).trim(); }
-	 * 
-	 * return line; }
-	 */
 	public static Collection<String> process(Collection<String> lines) throws BusinessException {
 		List<String> list = new ArrayList<String>();
 
@@ -103,5 +91,9 @@ public class CreateSentences {
 
 		add2List(sb, list);
 		return cleanse(addTerminatingPeriods(list));
+	}
+
+	public static Collection<String> process(String line) throws BusinessException {
+		return process(CollectionUtils.toCollection(line));
 	}
 }
