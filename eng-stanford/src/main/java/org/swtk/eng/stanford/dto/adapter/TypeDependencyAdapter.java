@@ -13,7 +13,7 @@ import edu.stanford.nlp.trees.TypedDependency;
 
 public class TypeDependencyAdapter {
 
-	public static final String	DEPENDENCY_XML_START	= "<node subject=\"%s\" subject-sequence=\"%s\" object=\"%s\" object-sequence=\"%s\" predicate=\"%s\" />";
+	public static final String DEPENDENCY_XML_START = "<node subject=\"%s\" subject-sequence=\"%s\" object=\"%s\" object-sequence=\"%s\" predicate=\"%s\" />";
 
 	private static Integer getSequence(String value) {
 		value = value.replaceAll("'", "");
@@ -49,7 +49,9 @@ public class TypeDependencyAdapter {
 
 		for (TypedDependency typedDependency : typedDependencies) {
 
-			String line = typedDependency.toString(false);
+			// commented out 8-Jan-16, ctrim
+			// String line = typedDependency.toString(false);
+			String line = typedDependency.toString();
 
 			String predicate = StringUtils.substringBefore(line, "(").trim();
 			String subject = StringUtils.substringBefore(StringUtils.substringAfter(line, "("), ",").trim();
